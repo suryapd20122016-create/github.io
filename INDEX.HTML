@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #222; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.5rem; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+    nav a:hover { color: #00adb5; }
+
+    section { padding: 60px 40px; max-width: 1000px; margin: auto; }
+    h2 { font-size: 2rem; margin-bottom: 20px; color: #00adb5; }
+
+    .about, .projects, .contact { margin-bottom: 80px; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; border-radius: 8px; }
+    .project-card h3 { margin: 15px 0 10px; }
+    .btn {
+      display: inline-block; padding: 10px 20px; background: #00adb5; color: #fff;
+      border-radius: 5px; text-decoration: none; transition: background 0.2s;
+    }
+    .btn:hover { background: #007780; }
+
+    footer { text-align: center; padding: 20px; background: #222; color: #fff; margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Your Name</strong>, a [Your Role, e.g. Data Analyst / Web Developer]. 
+       I specialize in [skills/technologies]. My goal is to create impactful solutions that make a difference.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="Project Screenshot">
+        <h3>Project One</h3>
+        <p>Short description of the project, tools used, and impact/results.</p>
+        <a href="#" class="btn" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="Project Screenshot">
+        <h3>Project Two</h3>
+        <p>Short description of the project, tools used, and impact/results.</p>
+        <a href="#" class="btn" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
